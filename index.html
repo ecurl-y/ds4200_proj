@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>An Analysis of Boston Through Crime Rates</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+          <li><a href="index.html" ">Home</a></li>
+          <li><a href="trends.html" class="disabled">Trends</a></li>
+          <li><a href="monthly_count.html" class="disabled">Monthly Crime Total</a></li>
+          <li><a href="crimetype.html" class="disabled">Crime by Type</a></li>
+          <li><a href="socioeconomic.html" class="disabled">Socioeconomic Indicators and Crime</a></li>
+          <li><a href="hourly_crime_dis.html"class="disabled">Hourly Crime Distribution</a></li>
+          <li><a href="heatmap.html" class="disabled">Heatmap</a></li>
+          <li><a href="summary.html" class="disabled">Summary</a></li>
+        </ul>
+        </ul>
+      </nav>
+
+      <div class="hero">
+          <h1>Boston Crime Data Visualization</h1>
+      </div>
+    
+      <main class="home-content">
+      <div class="info-card full-width">
+        <h3>Why We Chose to Analyze Crime in Boston</h3>
+        <p>Crime is a multifaceted issue that affects all areas of society, and understanding its patterns is crucial for effective law enforcement and community safety strategies. Boston, being one of the major cities in the United States, presents a unique opportunity to analyze urban crime dynamics due to its diverse socio-economic landscape. By studying crime rates and their distribution across different neighborhoods, we aim to uncover patterns that could inform better policing policies, community outreach programs, and preventative measures. This analysis not only seeks to highlight areas with high crime rates but also to explore the underlying factors contributing to these incidences, such as economic disparities, educational opportunities, and urban development. Our project is significant as it provides insights that could help in crafting targeted interventions aimed at reducing crime and enhancing the quality of life for Boston's residents.</p>
+      </div>
+
+      <div class="info-card full-width">
+        <h3>About the Data</h3>
+        <p>The data we will be using for this project and analysis comes from the City of Boston’s online data collection and we will be mainly referring to the Crime Incidents Report (August 2015 - Present). The Crime Incidents Report is provided by the Boston Police Department and it documents the initial details of any incident that the BPD is called for. This dataset contains ten years of data and is updated frequently to include data from current experiences. In terms of the size of our data, in the file containing data for 2023-Present there is currently over 16,330 rows of data and this specific file will continue to be updated as our project continues. In files for years before 2023, there are more than 7000 rows of data recorded. The source of the data, the city of Boston, is reputable and it is coming directly from their reporting site, Analyze Boston. We expect to use other data sets to support the primary Crime Incidents Report and create more in-depth analysis. Two datasets that we have already found are the Boston Shooting dataset and the Boston Shots Fired dataset. Both the Boston Shootings dataset and the Boston Shots Fired dataset come from the same source, Analyze Boston, and have data from 2015 to present that is updated on a rolling basis of about 7 days. The Shootings dataset contains information on shooting incidents where a victim was actually struck by a bullet either fatally or non-fatally. The Shots Fired dataset is similar to the shootings dataset but it is a collection of data on incidents where a shot was fired in the city of Boston under BPD jurisdiction and did not hit any victim.</p>
+      </div>
+    
+      <div class="info-card full-width">
+        <h3>References</h3>
+        <ul>
+          <li><a href="https://www.diva-portal.org/smash/get/diva2:1902051/FULLTEXT02.pdf" target="_blank">Understanding Crime Patterns Using Spatial Data Analysis</a></li>
+          <p>This paper discusses methodologies for analyzing crime spatially across urban areas, which will inform our approach to visualizing and interpreting crime data in Boston.</p>
+          <li><a href="https://www.journalcswb.ca/index.php/cswb/article/view/244/736" target="_blank">Community Policing and Urban Safety: Reinventing Security in City Centers</a></li>
+          <p>This studyexplores the impact of community policing on crime rates in major cities, which will provide a comparative framework for our analysis of crime prevention effectiveness in Boston.</p>
+        </ul>
+      </div>
+      
+    <section>
+    <section>
+      <h2>Explore the Visualizations</h2>
+      <div class="custom-gallery equal-height">
+        <div class="gallery-row top-row">
+          <a href="trends.html" class="gallery-card large">
+            <img src="PlotPNG/monthly_crime_trends.png" alt="Crime Trends">
+            <p>Crime Trends Over Time</p>
+          </a>
+          <a href="monthly_count.html" class="gallery-card small">
+            <img src="PlotPNG/monthly_count.png" alt="Heatmap">
+            <p>Monthly Crime Totals</p>
+          </a>
+          <a href="crimetype.html" class="gallery-card small">
+            <img src="PlotPNG/yearly_crime_types.png" alt="Crime by Type">
+            <p>Crime by Type</p>
+          </a>
+        </div>
+        <div class="custom-gallery equal-height">
+          <div class="gallery-row top-row">
+            <a href="socioeconomic.html" class="gallery-card large">
+              <img src="PlotPNG/visualization.png" alt="Crime Trends">
+              <p>Socioeconomic Indicator vs. Crime</p>
+            </a>
+            <a href="hourly_crime_dis.html" class="gallery-card small">
+              <img src="PlotPNG/hourly_crime_dist_day.png" alt="Heatmap">
+              <p>Hourly Crime Distribution</p>
+            </a>
+            <a href="heatmap.html" class="gallery-card small">
+              <img src="PlotPNG/Screenshot 2025-04-09 at 11.07.15 PM.png" alt="Heatmap">
+              <p>Geographic Heatmap</p>
+              </a>
+          </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+</footer>
+</body>
+</html>

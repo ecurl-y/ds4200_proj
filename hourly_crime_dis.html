@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hourly Crime Distribution</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="disabled">Home</a></li>
+            <li><a href="trends.html" class="disabled">Trends</a></li>
+            <li><a href="monthly_count.html" class="disabled">Monthly Crime Total</a></li>
+            <li><a href="crimetype.html" class="disabled">Crime by Type</a></li>
+            <li><a href="socioeconomic.html" class="disabled">Socioeconomic Indicators and Crime</a></li>
+            <li><a href="hourly_crime_dis.html">Hourly Crime Distribution</a></li>
+            <li><a href="heatmap.html" class="disabled">Heatmap</a></li>
+            <li><a href="summary.html" class="disabled">Summary</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-content">
+        <div class="vis-card">
+          <h2>Hourly Crime Distribution by Day of Week</h2>
+          <div class="embed-container">
+            <iframe src="plotHTML/hourly_crime_dist_day.html" width="100%" height="550" style="border:none;"></iframe>
+          </div>
+          <p class="vis-description">
+            Chart Type (Multi-Line): A separate line for each day of the week helps compare daily patterns across the 24-hour cycle. Hourly intervals on the x-axis show how crime counts shift as the day progresses.<br>
+            Color Scheme: Each day (Monday through Sunday) is assigned a unique color so the lines don’t blend together. We typically use a light-to-dark or rainbow approach to differentiate days while keeping the palette readable.<br>
+            Tooltip Interaction: Users can hover over any point on a line to see the specific hour and crime count for a given day, revealing if late-night Saturday spikes are significantly bigger than weekday evening peaks, for example.<br>
+            Gridlines & Axis Labels: Including hour markers on the x-axis and a y-axis for crime counts ensures clarity. Subtle gridlines can help trace a specific hour’s crime volume across different days.<br>
+          </p>
+        </div>
+        <div class="vis-analysis">
+          <h3>Hourly Crime Distribution Analysis</h3>
+          <p style="font-size: 1.25rem;">
+            This view breaks down daily crime by hour, illustrating when offenses are most common throughout the week. A clear pattern emerges on Friday and Saturday nights, where reported incidents remain elevated later into the evening, often peaking around 10 PM to midnight, possibly reflecting nightlife activity and larger gatherings. During weekdays, there can be a smaller midday spike, particularly around lunchtime, correlating with high foot traffic in business districts. Such findings can be invaluable for scheduling police patrols and for community organizations looking to run awareness campaigns during the hours when incidents are most likely to occur.
+        </div>
+      </main>
+      <footer class="site-footer">
+        <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+      </footer>
+</body>
+</html>

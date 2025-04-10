@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatmap</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        #map {
+        height: 600px;
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="disabled">Home</a></li>
+            <li><a href="trends.html" class="disabled">Trends</a></li>
+            <li><a href="monthly_count.html" class="disabled">Monthly Crime Total</a></li>
+            <li><a href="crimetype.html" class="disabled">Crime by Type</a></li>
+            <li><a href="socioeconomic.html" class="disabled">Socioeconomic Indicators and Crime</a></li>
+            <li><a href="hourly_crime_dis.html"class="disabled">Hourly Crime Distribution</a></li>
+            <li><a href="heatmap.html">Heatmap</a></li>
+            <li><a href="summary.html" class="disabled">Summary</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-content">
+        <div class="vis-card">
+          <h2>Geographic Crime Heatmap of Boston</h2>
+          <div id="map"></div>
+        </div>
+      </main>
+      <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+      <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+      <script src="plotHTML/heatmap.js"></script>
+      <footer class="site-footer">
+        <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+      </footer>
+</body>
+</html>

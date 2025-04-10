@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crime Type</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html" class="disabled">Home</a></li>
+            <li><a href="trends.html" class="disabled">Trends</a></li>
+            <li><a href="monthly_count.html" class="disabled">Monthly Crime Total</a></li>
+            <li><a href="crimetype.html">Crime by Type</a></li>
+            <li><a href="socioeconomic.html" class="disabled">Socioeconomic Indicators and Crime</a></li>
+            <li><a href="hourly_crime_dis.html"class="disabled">Hourly Crime Distribution</a></li>
+            <li><a href="heatmap.html" class="disabled">Heatmap</a></li>
+            <li><a href="summary.html" class="disabled">Summary</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-content">
+        <div class="vis-card">
+          <h2>Top 10 Crimes per Year in Boston</h2>
+          <div class="embed-container">
+            <iframe src="plotHTML/yearly_crime_types.html" width="100%" height="550" style="border:none;"></iframe>
+          </div>
+          <p class="vis-description">
+            Chart Type (Stacked Bar for Ranked Categories): We chose a stacked bar to let users compare both the absolute and relative size of the top 10 offenses in each year.<br>
+            Ordering & Ranking: By highlighting only the top 10 categories, we avoid an overly busy chart and direct attention to the most impactful or frequent offenses. Bars are typically sorted from the most frequent at the bottom to the least frequent at the top (or vice versa), making year-to-year patterns more apparent.<br>
+            Color Palette for Categories: Each category has a distinct hue consistent with the palette used in the previous graph, ensuring continuity across all offense-type visualizations.<br>
+            Axis & Legends: A clear legend helps viewers map each color to an offense category, while x-axis labels indicate the year.<br>
+          </p>
+        </div>
+        <div class="vis-analysis">
+          <h3>Top Crimes by Year</h3>
+          <p style="font-size: 1.25rem;">
+            This chart ranks the ten most frequent offenses each year, making it straightforward to see if certain categories are expanding or contracting over time. For example, vandalism may account for up to 20–25% of the total in some months of a particular year, while drug-related offenses can spike in another. Seeing categories like “Investigate Person” or “Simple Assault” consistently near the top also helps stakeholders understand which problems remain persistent. If vandalism shows a noticeable jump two years in a row, it could be a sign that community outreach programs or specialized policing might be needed to address property damage concerns.
+        </div>
+      </main>
+      <footer class="site-footer">
+        <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+      </footer>
+</body>
+</html>

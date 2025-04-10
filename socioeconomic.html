@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socioeconomic</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+          <li><a href="index.html" class="disabled">Home</a></li>
+          <li><a href="trends.html" class="disabled">Trends</a></li>
+          <li><a href="monthly_count.html" class="disabled">Monthly Crime Total</a></li>
+          <li><a href="crimetype.html" class="disabled">Crime by Type</a></li>
+          <li><a href="socioeconomic.html">Socioeconomic Indicators and Crime</a></li>
+          <li><a href="hourly_crime_dis.html"class="disabled">Hourly Crime Distribution</a></li>
+          <li><a href="heatmap.html" class="disabled">Heatmap</a></li>
+          <li><a href="summary.html" class="disabled">Summary</a></li>
+    </nav>
+    
+    <main class="home-content">
+        <div class="vis-card">
+          <h2>Top 10 Crimes per Year in Boston</h2>
+          <div class="embed-container">
+            <iframe src="plotHTML/socioeconomic_indicators.html" width="100%" height="550" style="border:none;"></iframe>
+          </div>
+          <p class="vis-description">
+            Chart Type (Scatter Plot): A scatter plot is great for displaying relationships between two continuous variables, crime counts (or rates) and a socioeconomic measure (like median income).<br>
+            Axis Configuration: Typically, the x-axis might show the socioeconomic indicator (like the income), while the y-axis represents crime volume. This layout helps emphasize whether there’s a linear or more complex correlation.<br>
+            Color-Coding or Symbol Variation: Each district can be uniquely colored or shaped, making outliers stand out immediately. Alternatively, a single color gradient could reflect a third variable (like population density).Interactive Elements: Dropdowns allow users to switch between different socioeconomic variables (ex: unemployment rate, education level). Hover-tooltips display exact district names, crime counts, and the chosen socioeconomic metric, helping viewers delve deeper into any point of interest.<br>
+          </p>
+        </div>
+        <div class="vis-analysis">
+          <h3>Crime vs. Socioeconomic Indicators</h3>
+          <p style="font-size: 1.25rem;">
+            This graph shows the relationship of when crime data meets external socioeconomic variables, such as median income, population density, or educational attainment, to identify potential correlations. Notably, several districts with lower average incomes display higher crime volumes, suggesting a strong relationship between economic conditions and certain types of offenses. At the same time, a few outliers show moderate or high incomes but still elevated crime levels, which causes questions to arise about other possible contributors, such as proximity to nightlife areas or major transportation hubs. By drilling down to specific points in this scatter plot, viewers can explore local nuances, like a district’s recent gentrification or targeted community initiatives, that may explain why it doesn’t fit the broader trend.
+        </div>
+      </main>
+    <footer class="site-footer">
+        <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+    </footer>
+</body>
+</html>

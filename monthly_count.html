@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monthly Crime Count</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+          <li><a href="index.html" class="disabled">Home</a></li>
+          <li><a href="trends.html" class="disabled">Trends</a></li>
+          <li><a href="monthly_count.html">Monthly Crime Total</a></li>
+          <li><a href="crimetype.html" class="disabled">Crime by Type</a></li>
+          <li><a href="socioeconomic.html" class="disabled">Socioeconomic Indicators and Crime</a></li>
+          <li><a href="hourly_crime_dis.html"class="disabled">Hourly Crime Distribution</a></li>
+          <li><a href="heatmap.html" class="disabled">Heatmap</a></li>
+          <li><a href="summary.html" class="disabled">Summary</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-content">
+        <div class="vis-card">
+          <h2>Monthly Crime Count in Boston</h2>
+          <div class="embed-container">
+            <iframe src="plotHTML/monthly_count.html" width="100%" height="550" style="border:none;"></iframe>
+          </div>
+          <p class="vis-description">
+            Focus on Recent Data: By limiting the timeframe to 2019–2023, we could create a less cluttered line chart that highlights more current shifts and makes year-to-year comparisons simpler. <br>          
+            Minimalist Color Scheme: Because we’re displaying fewer years, a smaller but distinct set of colors helps each line stand out clearly.<br>
+            Highlight Significant Periods: Some implementations might add subtle shading or markers to indicate major societal events (for example, a gray band for COVID-19 lockdown months), so viewers can quickly see where real-world events align with spikes or dips. <br>
+            Tooltips & Axis Labels: We kept the design similar to previous graph for consistency: months on the x-axis, crime counts on the y-axis, and tooltip popups for precise data points.
+          </p>
+        </div>
+        <div class="vis-analysis">
+          <h3>Monthy Count Analysis</h3>
+          <p style="font-size: 1.25rem;">
+            Focusing on the different years, which each had a different socio-economical effect on society, can give us insight on if monthly data is consistent through the years. In particular, the early months of 2020 show a dip in reported incidents, likely connected to the onset of COVID-19 restrictions. By late 2021, however, crime figures begin to climb closer to pre-pandemic levels. These findings can spark discussion about how broader societal factors, like economic strains or changes in social behavior, might have influenced crime rates and whether current strategies are effectively addressing these new conditions.        </div>
+    </main>
+    <footer class="site-footer">
+        <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+    </footer>
+</body>
+</html>

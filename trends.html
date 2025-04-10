@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="top-nav">
+        <ul>
+          <li><a href="index.html" class="disabled">Home</a></li>
+          <li><a href="trends.html">Trends</a></li>
+          <li><a href="monthly_count.html" class="disabled">Monthly Crime Total</a></li>
+          <li><a href="crimetype.html" class="disabled">Crime by Type</a></li>
+          <li><a href="socioeconomic.html" class="disabled">Socioeconomic Indicators and Crime</a></li>
+          <li><a href="hourly_crime_dis.html"class="disabled">Hourly Crime Distribution</a></li>
+          <li><a href="heatmap.html" class="disabled">Heatmap</a></li>
+          <li><a href="summary.html" class="disabled">Summary</a></li>
+        </ul>
+    </nav>
+
+    <main class="home-content">
+        <div class="vis-card">
+            <h2>Monthly Crime Trends in Boston (2019–2023)</h2>
+            <div class="embed-container">
+                <iframe src="plotHTML/monthly_crime_trends.html" width="100%" height="500" style="border:none;"></iframe>
+            </div>
+            <p class="vis-description">
+                Chart Type (Line Chart): We chose a multi-line chart to show how crime totals fluctuate by month for several years in one view. Line charts effectively convey trends over time and make it easy to compare one year’s pattern against another.<br>
+                Color Palette: Each year is assigned a distinct color that stands out but is still part of a cohesive palette, helping viewers instantly see which line belongs to which year. <br>
+                Axis & Labels: The x-axis represents months (January–December), and the y-axis represents the number of crime incidents. We included a clear title, legend, and labeled axes so that users can quickly interpret the data.    
+            </p>
+        </div>
+
+        <div class="vis-analysis">
+            <h3>Monthly Crime Trends Analysis</h3>
+            <p style="font-size: 1.25rem;">
+                This chart plots the total number of reported crimes per month across several years, helping to illustrate any recurring seasonal peaks or valleys. In many of the years shown, we see a noticeable rise in crimes from late spring through early fall, with July and August showing around 10–15% higher reported incidents than the winter months. By comparing multiple years in one view, it’s easy to confirm whether summer spikes are consistent patterns or if certain months only stood out in specific years. These trends can lead us to ask deeper questions about contributing factors. For example, do higher crimes in warmer months correlate with local festivals, holiday celebrations, or changes in policing resources?
+            </p>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <p>Created by Beatriz Braz Auto Marinho, Eliza Ford, Minh Phan</p>
+    </footer>
+</body>
+</html>
