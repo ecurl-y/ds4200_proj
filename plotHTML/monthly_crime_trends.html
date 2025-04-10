@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-8e07a17a574b303a28c08bdf0c01a47b"}, "mark": {"type": "line", "point": true}, "encoding": {"color": {"field": "YEAR", "title": "Year", "type": "nominal"}, "tooltip": [{"field": "YEAR", "type": "quantitative"}, {"field": "MONTH", "type": "quantitative"}, {"field": "Crime_Count", "type": "quantitative"}], "x": {"field": "MONTH", "title": "Month", "type": "ordinal"}, "y": {"field": "Crime_Count", "title": "Crime Count", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_1", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Monthly Crime Trends in Boston (2019\u20132023)", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-8e07a17a574b303a28c08bdf0c01a47b": [{"YEAR": 2019, "MONTH": 1, "Crime_Count": 6958}, {"YEAR": 2019, "MONTH": 2, "Crime_Count": 6173}, {"YEAR": 2019, "MONTH": 3, "Crime_Count": 7093}, {"YEAR": 2019, "MONTH": 4, "Crime_Count": 6963}, {"YEAR": 2019, "MONTH": 5, "Crime_Count": 7783}, {"YEAR": 2019, "MONTH": 6, "Crime_Count": 7635}, {"YEAR": 2019, "MONTH": 7, "Crime_Count": 8083}, {"YEAR": 2019, "MONTH": 8, "Crime_Count": 8430}, {"YEAR": 2019, "MONTH": 9, "Crime_Count": 8184}, {"YEAR": 2019, "MONTH": 10, "Crime_Count": 7121}, {"YEAR": 2019, "MONTH": 11, "Crime_Count": 6468}, {"YEAR": 2019, "MONTH": 12, "Crime_Count": 6293}, {"YEAR": 2020, "MONTH": 1, "Crime_Count": 6342}, {"YEAR": 2020, "MONTH": 2, "Crime_Count": 5897}, {"YEAR": 2020, "MONTH": 3, "Crime_Count": 5513}, {"YEAR": 2020, "MONTH": 4, "Crime_Count": 4387}, {"YEAR": 2020, "MONTH": 5, "Crime_Count": 5439}, {"YEAR": 2020, "MONTH": 6, "Crime_Count": 5925}, {"YEAR": 2020, "MONTH": 7, "Crime_Count": 6236}, {"YEAR": 2020, "MONTH": 8, "Crime_Count": 6533}, {"YEAR": 2020, "MONTH": 9, "Crime_Count": 6484}, {"YEAR": 2020, "MONTH": 10, "Crime_Count": 6766}, {"YEAR": 2020, "MONTH": 11, "Crime_Count": 5770}, {"YEAR": 2020, "MONTH": 12, "Crime_Count": 5602}, {"YEAR": 2021, "MONTH": 1, "Crime_Count": 5115}, {"YEAR": 2021, "MONTH": 2, "Crime_Count": 4822}, {"YEAR": 2021, "MONTH": 3, "Crime_Count": 5821}, {"YEAR": 2021, "MONTH": 4, "Crime_Count": 5631}, {"YEAR": 2021, "MONTH": 5, "Crime_Count": 6087}, {"YEAR": 2021, "MONTH": 6, "Crime_Count": 6450}, {"YEAR": 2021, "MONTH": 7, "Crime_Count": 6387}, {"YEAR": 2021, "MONTH": 8, "Crime_Count": 6730}, {"YEAR": 2021, "MONTH": 9, "Crime_Count": 6463}, {"YEAR": 2021, "MONTH": 10, "Crime_Count": 6753}, {"YEAR": 2021, "MONTH": 11, "Crime_Count": 5879}, {"YEAR": 2021, "MONTH": 12, "Crime_Count": 5583}, {"YEAR": 2022, "MONTH": 1, "Crime_Count": 5526}, {"YEAR": 2022, "MONTH": 2, "Crime_Count": 5418}, {"YEAR": 2022, "MONTH": 3, "Crime_Count": 6136}, {"YEAR": 2022, "MONTH": 4, "Crime_Count": 6103}, {"YEAR": 2022, "MONTH": 5, "Crime_Count": 6474}, {"YEAR": 2022, "MONTH": 6, "Crime_Count": 6500}, {"YEAR": 2022, "MONTH": 7, "Crime_Count": 6726}, {"YEAR": 2022, "MONTH": 8, "Crime_Count": 6612}, {"YEAR": 2022, "MONTH": 9, "Crime_Count": 6300}, {"YEAR": 2022, "MONTH": 10, "Crime_Count": 6235}, {"YEAR": 2022, "MONTH": 11, "Crime_Count": 5963}, {"YEAR": 2022, "MONTH": 12, "Crime_Count": 5859}, {"YEAR": 2023, "MONTH": 1, "Crime_Count": 6082}, {"YEAR": 2023, "MONTH": 2, "Crime_Count": 5700}, {"YEAR": 2023, "MONTH": 3, "Crime_Count": 6448}, {"YEAR": 2023, "MONTH": 4, "Crime_Count": 6133}, {"YEAR": 2023, "MONTH": 5, "Crime_Count": 6920}, {"YEAR": 2023, "MONTH": 6, "Crime_Count": 6501}, {"YEAR": 2023, "MONTH": 7, "Crime_Count": 6758}, {"YEAR": 2023, "MONTH": 8, "Crime_Count": 6809}, {"YEAR": 2023, "MONTH": 9, "Crime_Count": 6511}, {"YEAR": 2023, "MONTH": 10, "Crime_Count": 6783}, {"YEAR": 2023, "MONTH": 11, "Crime_Count": 6634}, {"YEAR": 2023, "MONTH": 12, "Crime_Count": 6687}, {"YEAR": 2024, "MONTH": 1, "Crime_Count": 6126}, {"YEAR": 2024, "MONTH": 2, "Crime_Count": 5823}, {"YEAR": 2024, "MONTH": 3, "Crime_Count": 5294}, {"YEAR": 2024, "MONTH": 4, "Crime_Count": 6448}, {"YEAR": 2024, "MONTH": 5, "Crime_Count": 7163}, {"YEAR": 2024, "MONTH": 6, "Crime_Count": 6834}, {"YEAR": 2024, "MONTH": 7, "Crime_Count": 7014}, {"YEAR": 2024, "MONTH": 8, "Crime_Count": 7087}, {"YEAR": 2024, "MONTH": 9, "Crime_Count": 7019}, {"YEAR": 2024, "MONTH": 10, "Crime_Count": 6792}, {"YEAR": 2024, "MONTH": 11, "Crime_Count": 6473}, {"YEAR": 2024, "MONTH": 12, "Crime_Count": 6701}, {"YEAR": 2025, "MONTH": 1, "Crime_Count": 6052}, {"YEAR": 2025, "MONTH": 2, "Crime_Count": 510}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

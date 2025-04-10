@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-3ecaf11a326d33c3bf8b3e2be014aeeb"}, "mark": {"type": "line", "point": true}, "encoding": {"tooltip": [{"field": "month", "type": "temporal"}, {"field": "Crime Count", "type": "quantitative"}], "x": {"field": "month", "title": "Month", "type": "temporal"}, "y": {"field": "Crime Count", "title": "Number of Crimes", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_1", "select": {"type": "interval", "encodings": ["x", "y"]}, "bind": "scales"}], "title": "Monthly Crime Count in Boston (2019\u20132023)", "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-3ecaf11a326d33c3bf8b3e2be014aeeb": [{"month": "2019-01-01T00:00:00", "Crime Count": 6958}, {"month": "2019-02-01T00:00:00", "Crime Count": 6173}, {"month": "2019-03-01T00:00:00", "Crime Count": 7093}, {"month": "2019-04-01T00:00:00", "Crime Count": 6963}, {"month": "2019-05-01T00:00:00", "Crime Count": 7783}, {"month": "2019-06-01T00:00:00", "Crime Count": 7635}, {"month": "2019-07-01T00:00:00", "Crime Count": 8083}, {"month": "2019-08-01T00:00:00", "Crime Count": 8430}, {"month": "2019-09-01T00:00:00", "Crime Count": 8184}, {"month": "2019-10-01T00:00:00", "Crime Count": 7121}, {"month": "2019-11-01T00:00:00", "Crime Count": 6468}, {"month": "2019-12-01T00:00:00", "Crime Count": 6293}, {"month": "2020-01-01T00:00:00", "Crime Count": 6342}, {"month": "2020-02-01T00:00:00", "Crime Count": 5897}, {"month": "2020-03-01T00:00:00", "Crime Count": 5513}, {"month": "2020-04-01T00:00:00", "Crime Count": 4387}, {"month": "2020-05-01T00:00:00", "Crime Count": 5439}, {"month": "2020-06-01T00:00:00", "Crime Count": 5925}, {"month": "2020-07-01T00:00:00", "Crime Count": 6236}, {"month": "2020-08-01T00:00:00", "Crime Count": 6533}, {"month": "2020-09-01T00:00:00", "Crime Count": 6484}, {"month": "2020-10-01T00:00:00", "Crime Count": 6766}, {"month": "2020-11-01T00:00:00", "Crime Count": 5770}, {"month": "2020-12-01T00:00:00", "Crime Count": 5602}, {"month": "2021-01-01T00:00:00", "Crime Count": 5115}, {"month": "2021-02-01T00:00:00", "Crime Count": 4822}, {"month": "2021-03-01T00:00:00", "Crime Count": 5821}, {"month": "2021-04-01T00:00:00", "Crime Count": 5631}, {"month": "2021-05-01T00:00:00", "Crime Count": 6087}, {"month": "2021-06-01T00:00:00", "Crime Count": 6450}, {"month": "2021-07-01T00:00:00", "Crime Count": 6387}, {"month": "2021-08-01T00:00:00", "Crime Count": 6730}, {"month": "2021-09-01T00:00:00", "Crime Count": 6463}, {"month": "2021-10-01T00:00:00", "Crime Count": 6753}, {"month": "2021-11-01T00:00:00", "Crime Count": 5879}, {"month": "2021-12-01T00:00:00", "Crime Count": 5583}, {"month": "2022-01-01T00:00:00", "Crime Count": 5526}, {"month": "2022-02-01T00:00:00", "Crime Count": 5418}, {"month": "2022-03-01T00:00:00", "Crime Count": 6136}, {"month": "2022-04-01T00:00:00", "Crime Count": 6103}, {"month": "2022-05-01T00:00:00", "Crime Count": 6474}, {"month": "2022-06-01T00:00:00", "Crime Count": 6500}, {"month": "2022-07-01T00:00:00", "Crime Count": 6726}, {"month": "2022-08-01T00:00:00", "Crime Count": 6612}, {"month": "2022-09-01T00:00:00", "Crime Count": 6300}, {"month": "2022-10-01T00:00:00", "Crime Count": 6235}, {"month": "2022-11-01T00:00:00", "Crime Count": 5963}, {"month": "2022-12-01T00:00:00", "Crime Count": 5859}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

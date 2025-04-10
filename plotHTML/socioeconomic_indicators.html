@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-cfd6e6cd1b7d48af22cab82a3c23d927"}, "mark": {"type": "circle", "size": 100}, "encoding": {"color": {"field": "DISTRICT", "type": "nominal"}, "tooltip": [{"field": "DISTRICT", "type": "nominal"}, {"field": "VALUE", "type": "quantitative"}, {"field": "CRIME_COUNT", "type": "quantitative"}], "x": {"field": "VALUE", "title": "Socioeconomic Variable", "type": "quantitative"}, "y": {"field": "CRIME_COUNT", "title": "Crime Count", "type": "quantitative"}}, "height": 400, "params": [{"name": "param_1", "select": {"type": "point", "fields": ["SOCIO_VAR"]}, "bind": {"input": "select", "options": ["MEDIAN_INCOME", "EDUCATION_RATE", "POP_DENSITY"], "name": "Variable: "}, "value": "MEDIAN_INCOME"}], "title": "Crime vs. Socioeconomic Indicators by District (Interactive)", "transform": [{"filter": {"param": "param_1"}}], "width": 700, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-cfd6e6cd1b7d48af22cab82a3c23d927": [{"DISTRICT": "A1", "CRIME_COUNT": 53092, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 75000.0}, {"DISTRICT": "A7", "CRIME_COUNT": 22195, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 62000.0}, {"DISTRICT": "B2", "CRIME_COUNT": 65094, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 41000.0}, {"DISTRICT": "B3", "CRIME_COUNT": 48874, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 43000.0}, {"DISTRICT": "C6", "CRIME_COUNT": 37468, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 56000.0}, {"DISTRICT": "C11", "CRIME_COUNT": 57392, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 49000.0}, {"DISTRICT": "D4", "CRIME_COUNT": 62070, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 70000.0}, {"DISTRICT": "D14", "CRIME_COUNT": 32651, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 67000.0}, {"DISTRICT": "E5", "CRIME_COUNT": 22184, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 72000.0}, {"DISTRICT": "E13", "CRIME_COUNT": 26975, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 60000.0}, {"DISTRICT": "E18", "CRIME_COUNT": 26136, "SOCIO_VAR": "MEDIAN_INCOME", "VALUE": 58000.0}, {"DISTRICT": "A1", "CRIME_COUNT": 53092, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.91}, {"DISTRICT": "A7", "CRIME_COUNT": 22195, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.87}, {"DISTRICT": "B2", "CRIME_COUNT": 65094, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.68}, {"DISTRICT": "B3", "CRIME_COUNT": 48874, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.72}, {"DISTRICT": "C6", "CRIME_COUNT": 37468, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.84}, {"DISTRICT": "C11", "CRIME_COUNT": 57392, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.77}, {"DISTRICT": "D4", "CRIME_COUNT": 62070, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.9}, {"DISTRICT": "D14", "CRIME_COUNT": 32651, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.88}, {"DISTRICT": "E5", "CRIME_COUNT": 22184, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.93}, {"DISTRICT": "E13", "CRIME_COUNT": 26975, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.86}, {"DISTRICT": "E18", "CRIME_COUNT": 26136, "SOCIO_VAR": "EDUCATION_RATE", "VALUE": 0.82}, {"DISTRICT": "A1", "CRIME_COUNT": 53092, "SOCIO_VAR": "POP_DENSITY", "VALUE": 10500.0}, {"DISTRICT": "A7", "CRIME_COUNT": 22195, "SOCIO_VAR": "POP_DENSITY", "VALUE": 9800.0}, {"DISTRICT": "B2", "CRIME_COUNT": 65094, "SOCIO_VAR": "POP_DENSITY", "VALUE": 12500.0}, {"DISTRICT": "B3", "CRIME_COUNT": 48874, "SOCIO_VAR": "POP_DENSITY", "VALUE": 11200.0}, {"DISTRICT": "C6", "CRIME_COUNT": 37468, "SOCIO_VAR": "POP_DENSITY", "VALUE": 9700.0}, {"DISTRICT": "C11", "CRIME_COUNT": 57392, "SOCIO_VAR": "POP_DENSITY", "VALUE": 10800.0}, {"DISTRICT": "D4", "CRIME_COUNT": 62070, "SOCIO_VAR": "POP_DENSITY", "VALUE": 10200.0}, {"DISTRICT": "D14", "CRIME_COUNT": 32651, "SOCIO_VAR": "POP_DENSITY", "VALUE": 9600.0}, {"DISTRICT": "E5", "CRIME_COUNT": 22184, "SOCIO_VAR": "POP_DENSITY", "VALUE": 8800.0}, {"DISTRICT": "E13", "CRIME_COUNT": 26975, "SOCIO_VAR": "POP_DENSITY", "VALUE": 9500.0}, {"DISTRICT": "E18", "CRIME_COUNT": 26136, "SOCIO_VAR": "POP_DENSITY", "VALUE": 9100.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
